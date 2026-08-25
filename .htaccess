@@ -59,7 +59,11 @@ Options -Indexes
   RewriteCond %{THE_REQUEST} \s/+([^.]+)\.html[\s?] [NC]
   RewriteRule ^ %1 [R=301,L]
 
-  # Internally map clean URLs to .html files
+  # Internally map clean URLs to .html files (root level)
   RewriteCond %{REQUEST_FILENAME}.html -f
   RewriteRule ^([^/]+)/?$ $1.html [L]
+
+  # Internally map clean URLs to .html files (blog subfolder)
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^blog/([^/]+)/?$ blog/$1.html [L]
 </IfModule>
