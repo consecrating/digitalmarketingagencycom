@@ -1,0 +1,65 @@
+# ==============================
+#  PRODUCTION / LIVE MODE
+# ==============================
+
+# Set default index file
+DirectoryIndex index.html index.php
+
+# ------------------------------
+# ENABLE SEARCH ENGINE INDEXING
+# ------------------------------
+<IfModule mod_headers.c>
+  Header unset X-Robots-Tag
+</IfModule>
+
+# ------------------------------
+# DISABLE DIRECTORY LISTING
+# ------------------------------
+Options -Indexes
+
+# ------------------------------
+# ENABLE BROWSER CACHING
+# ------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 7 days"
+
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType image/jpg "access plus 90 days"
+  ExpiresByType image/jpeg "access plus 90 days"
+  ExpiresByType image/png "access plus 90 days"
+  ExpiresByType image/webp "access plus 90 days"
+  ExpiresByType image/svg+xml "access plus 90 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|jpg|jpeg|png|webp|svg|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+# ------------------------------
+# URL REWRITES & REDIRECTS
+# ------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Force HTTPS + WWW (single canonical version)
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} !^www\.digitalmarketingagencygoa\.com$ [NC]
+  RewriteRule ^(.*)$ https://www.digitalmarketingagencygoa.com/$1 [L,R=301]
+
+  # Redirect index.html or index.php to root
+  RewriteCond %{THE_REQUEST} \s/+index(\.html|\.php)?[\s?] [NC]
+  RewriteRule ^index(\.html|\.php)?$ https://www.digitalmarketingagencygoa.com/ [R=301,L]
+
+  # Redirect .html URLs to clean URLs
+  RewriteCond %{THE_REQUEST} \s/+([^.]+)\.html[\s?] [NC]
+  RewriteRule ^ %1 [R=301,L]
+
+  # Internally map clean URLs to .html files
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([^/]+)/?$ $1.html [L]
+</IfModule>
