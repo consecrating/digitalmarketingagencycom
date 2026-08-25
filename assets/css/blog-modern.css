@@ -1,0 +1,132 @@
+/* ============================================================
+   Modern Blog Post Layout — Rankify Goa
+   Full-width 2-column magazine layout (wide, not narrow)
+   Loaded only on blog post pages (after main.css, overrides it)
+   ============================================================ */
+
+/* Wider content section */
+.tj-blog-section .container { max-width: 1280px; }
+.tj-blog-section .post-details-wrapper { max-width: 100%; margin: 0; }
+
+/* Hero banner image */
+.tj-blog-section .blog-images img {
+  width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 55px rgba(20, 30, 80, 0.16);
+  margin-bottom: 38px;
+}
+
+/* Body typography — comfortable, readable */
+.tj-blog-section .blog-text {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #3d4657;
+  letter-spacing: 0.1px;
+}
+.tj-blog-section .blog-text p { margin: 0 0 22px; }
+.tj-blog-section .blog-text strong { color: #111827; font-weight: 700; }
+.tj-blog-section .blog-text a {
+  color: #5a63d6; text-decoration: underline; text-underline-offset: 2px; font-weight: 600;
+}
+.tj-blog-section .blog-text a:hover { color: #764ba2; }
+
+/* First paragraph = lead */
+.tj-blog-section .blog-text > p:first-of-type {
+  font-size: 20px; color: #2b3242; line-height: 1.8; font-weight: 500;
+}
+
+/* Headings with accent bar */
+.tj-blog-section .blog-text h2 {
+  font-size: 30px; line-height: 1.25; font-weight: 800; color: #111827;
+  margin: 50px 0 20px; padding-left: 18px; position: relative;
+}
+.tj-blog-section .blog-text h2::before {
+  content: ""; position: absolute; left: 0; top: 4px; bottom: 4px;
+  width: 5px; border-radius: 4px; background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+.tj-blog-section .blog-text h3 {
+  font-size: 23px; font-weight: 700; color: #1f2937; margin: 34px 0 14px;
+}
+.tj-blog-section .blog-text h4, .tj-blog-section .blog-text h5 {
+  font-size: 18px; font-weight: 700; color: #1f2937; margin: 24px 0 10px;
+}
+
+/* Check-mark bullet lists */
+.tj-blog-section .blog-text ul { list-style: none; padding: 0; margin: 0 0 26px; }
+.tj-blog-section .blog-text ul li {
+  position: relative; padding-left: 34px; margin-bottom: 13px; line-height: 1.7;
+}
+.tj-blog-section .blog-text ul li::before {
+  content: ""; position: absolute; left: 0; top: 3px; width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(102,126,234,0.12) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") center / 13px no-repeat;
+}
+.tj-blog-section .blog-text ol { padding-left: 22px; margin: 0 0 26px; }
+.tj-blog-section .blog-text ol li { margin-bottom: 12px; line-height: 1.7; padding-left: 6px; }
+
+/* Modern FAQ accordion */
+.tj-blog-section .tj-faq { margin-top: 24px; }
+.tj-blog-section .tj-faq .accordion-item {
+  background: #fff; border: 1px solid #eceef4; border-radius: 14px; margin-bottom: 14px;
+  box-shadow: 0 6px 22px rgba(20,30,80,0.05); overflow: hidden;
+  transition: box-shadow .3s ease, border-color .3s ease;
+}
+.tj-blog-section .tj-faq .accordion-item:hover { box-shadow: 0 10px 30px rgba(102,126,234,0.12); border-color: #d9deff; }
+.tj-blog-section .tj-faq .faq-title {
+  width: 100%; text-align: left; border: 0; background: transparent; font-size: 17px; font-weight: 700;
+  color: #1f2937; padding: 20px 58px 20px 24px; position: relative; cursor: pointer; line-height: 1.5;
+}
+.tj-blog-section .tj-faq .faq-title::after {
+  content: "+"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
+  width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 400; color: #fff; background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%; transition: transform .3s ease;
+}
+.tj-blog-section .tj-faq .faq-title[aria-expanded="true"]::after { content: "\2212"; transform: translateY(-50%) rotate(180deg); }
+.tj-blog-section .tj-faq .faq-text { padding: 0 24px 22px; color: #4b5563; font-size: 15.5px; line-height: 1.8; }
+.tj-blog-section .tj-faq .faq-text p { margin: 0; }
+
+/* ---------- Sticky Sidebar ---------- */
+.blog-sidebar { position: sticky; top: 100px; }
+.blog-sidebar .side-card {
+  background: #fff; border: 1px solid #eef0f5; border-radius: 16px; padding: 24px;
+  margin-bottom: 22px; box-shadow: 0 8px 28px rgba(20,30,80,0.06);
+}
+.blog-sidebar .side-card h4 {
+  font-size: 18px; font-weight: 800; color: #111827; margin: 0 0 16px; padding-bottom: 12px;
+  border-bottom: 2px solid #f0f2f8;
+}
+.blog-sidebar .side-links { list-style: none; padding: 0; margin: 0; }
+.blog-sidebar .side-links li { margin-bottom: 10px; }
+.blog-sidebar .side-links a {
+  display: flex; align-items: center; gap: 8px; color: #4b5563; text-decoration: none;
+  font-size: 15px; font-weight: 500; padding: 8px 12px; border-radius: 10px; transition: all .25s ease;
+}
+.blog-sidebar .side-links a::before { content: "\203A"; color: #667eea; font-weight: 800; font-size: 18px; }
+.blog-sidebar .side-links a:hover { background: #f5f6ff; color: #4a5bd6; transform: translateX(3px); }
+.blog-sidebar .side-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 18px; padding: 28px 24px;
+  text-align: center; color: #fff; box-shadow: 0 14px 40px rgba(118,75,162,0.28);
+}
+.blog-sidebar .side-cta h4 { color: #fff; border: 0; font-size: 20px; margin-bottom: 8px; padding: 0; }
+.blog-sidebar .side-cta p { color: rgba(255,255,255,0.92); font-size: 14px; margin: 0 0 18px; }
+.blog-sidebar .side-cta .cta-wa {
+  display: inline-block; background: #fff; color: #764ba2; font-weight: 700; padding: 12px 22px;
+  border-radius: 30px; text-decoration: none; font-size: 15px; transition: transform .25s ease;
+}
+.blog-sidebar .side-cta .cta-wa:hover { transform: translateY(-2px); }
+.blog-sidebar .side-contact { font-size: 14px; color: #4b5563; line-height: 1.9; }
+.blog-sidebar .side-contact a { color: #4a5bd6; text-decoration: none; font-weight: 600; }
+
+/* Responsive */
+@media (max-width: 991px) {
+  .blog-sidebar { position: static; margin-top: 40px; }
+}
+@media (max-width: 768px) {
+  .tj-blog-section .blog-text { font-size: 16.5px; }
+  .tj-blog-section .blog-text h2 { font-size: 25px; }
+  .tj-blog-section .blog-text h3 { font-size: 20px; }
+  .tj-blog-section .blog-images img { border-radius: 12px; margin-bottom: 26px; }
+}
