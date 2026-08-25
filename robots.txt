@@ -1,4 +1,18 @@
+# Robots.txt for https://www.digitalmarketingagencygoa.com
+# Optimized for search engine crawling
+
 User-agent: *
 Allow: /
 
+# Block utility/admin paths
+Disallow: /cgi-bin/
+Disallow: /demo/
+Disallow: /.well-known/
+Disallow: /thank-you
+Disallow: /subscribers.txt
+
+# Sitemap location
 Sitemap: https://www.digitalmarketingagencygoa.com/sitemap.xml
+
+# Crawl-delay (be kind to the server)
+Crawl-delay: 1

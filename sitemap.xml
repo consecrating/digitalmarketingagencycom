@@ -1,110 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+              http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/</loc>
-  <lastmod>2025-12-13T05:41:03+00:00</lastmod>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.digitalmarketingagencygoa.com/about</loc>
-  <lastmod>2025-12-05T10:30:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.digitalmarketingagencygoa.com/services</loc>
-  <lastmod>2025-12-06T07:44:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://www.digitalmarketingagencygoa.com/digital-marketing</loc>
-  <lastmod>2025-12-05T10:46:08+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/seo-optimization</loc>
-  <lastmod>2025-12-06T07:39:11+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/social-media-marketing</loc>
-  <lastmod>2025-12-06T07:56:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/ppc-advertising</loc>
-  <lastmod>2025-12-06T07:37:05+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/content-marketing</loc>
-  <lastmod>2025-12-05T10:43:14+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/website-design</loc>
-  <lastmod>2025-12-04T07:24:05+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/branding-strategy</loc>
-  <lastmod>2025-12-05T10:35:36+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/graphic-designing</loc>
-  <lastmod>2025-12-05T10:55:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/local-seo</loc>
-  <lastmod>2025-12-06T07:35:06+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://www.digitalmarketingagencygoa.com/clients</loc>
-  <lastmod>2025-12-05T10:37:57+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://www.digitalmarketingagencygoa.com/services</loc>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://www.digitalmarketingagencygoa.com/about</loc>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/blog</loc>
-  <lastmod>2025-12-05T10:32:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.digitalmarketingagencygoa.com/contact</loc>
-  <lastmod>2025-12-05T10:40:35+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.digitalmarketingagencygoa.com/faq</loc>
-  <lastmod>2025-12-05T10:48:30+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/why-seo-important-for-business-growth</loc>
-  <lastmod>2025-12-04T11:29:31+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.65</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/top-seo-strategies-for-businesses-in-goa</loc>
-  <lastmod>2025-12-04T11:30:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.65</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/how-to-attract-more-customers-with-seo</loc>
-  <lastmod>2025-12-06T07:32:09+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>https://www.digitalmarketingagencygoa.com/contact</loc>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.digitalmarketingagencygoa.com/clients</loc>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://www.digitalmarketingagencygoa.com/faq</loc>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.55</priority>
 </url>
 <url>
   <loc>https://www.digitalmarketingagencygoa.com/terms</loc>
-  <lastmod>2025-12-06T08:00:20+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2026-08-25T11:17:14+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.30</priority>
 </url>
-
 
 </urlset>
