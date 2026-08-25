@@ -119,9 +119,8 @@ def build():
         if nav == "sitemap.xml": clean = "/sitemap.xml"
         template = template.replace(f'href="{nav}"', f'href="{SITE}{clean}"')
 
-    # Isolate the cards wrapper and pagination block to replace per page
-    wrap_re = re.compile(r'(<div class="blog__single__wrapper">).*?(</div>\s*</div>\s*<div class="tj-pagination)', re.S)
-    pag_re = re.compile(r'<div class="tj-pagination tj-pagination--left d-flex">.*?</div>\s*</div>', re.S)
+    # Pagination block only (NOT the following col-lg-8 close div)
+    pag_re = re.compile(r'<div class="tj-pagination tj-pagination--left d-flex">.*?</ul>\s*</div>', re.S)
 
     for pg in range(1, total_pages + 1):
         chunk = posts[(pg-1)*PER_PAGE: pg*PER_PAGE]
